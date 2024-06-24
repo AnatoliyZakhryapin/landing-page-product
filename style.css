@@ -142,7 +142,7 @@ h1.title {
 }
 
 h2.title {
-  font-size: 36px;
+  font-size: 32px;
 }
 
 .title {
@@ -164,6 +164,14 @@ ul.strengths-list p {
 .vote-list .list-item svg{
   color: gold;
   width: 18px;
+}
+
+/* Our Ducks */
+
+.card-duck .price{
+  color: var(--green);
+  font-size: 24px;
+  font-weight: bold;
 }
 
 
