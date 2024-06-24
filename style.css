@@ -48,5 +48,34 @@ figure > img {
   width: 36px; 
   height: 36px; 
   fill: currentColor;
+  color: var(--black);
 }
 
+.btn-unstyled {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+/* OFFCANVAS */
+.offcanvas {
+  width: 75%;
+}
+.offcanvas *{
+  color: var(--black);
+  text-decoration: none;
+}
+
+.offcanvas-menu {
+  padding: 0;
+  margin: 0;
+}
+
+.offcanvas-menu .menu-item {
+  cursor: pointer;
+}
+
+.offcanvas-menu .menu-item.active, 
+.offcanvas-menu .menu-item a:hover{
+  color: var(--violet);
+}
