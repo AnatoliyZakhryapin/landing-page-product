@@ -17,10 +17,17 @@ body {
   color: var(--black)!important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+header {
   font-family: 'Poppins', sans-serif !important;
   font-weight: 400 !important;
   line-height: 1.5 !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 100;
+  height: 100px;
 }
 
 a {
@@ -60,18 +67,6 @@ figure > img {
   background-color: transparent;
   padding: 0;
 }
-
-/* HEADER */
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: white;
-  z-index: 100;
-  height: 100px;
-}
-
 
 /* OFFCANVAS */
 .offcanvas {
@@ -114,6 +109,9 @@ section.hero-section {
   font-size: 44px;
 }
 
+.title {
+  font-weight: bolder;
+}
 /* Our Strengths */
 
 .our-strengths-section ul.strengths-list  {
