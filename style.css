@@ -198,3 +198,8 @@ ul.strengths-list p {
   background-image: none; 
 }
 
+/* Customer guarantees */
+
+.customer-guarantees .icon {
+  color:  var(--violet);
+}
