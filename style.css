@@ -137,8 +137,12 @@ section.hero-section {
   background-repeat: no-repeat;
 }
 
-.hero-section_content h1{
+h1.title {
   font-size: 44px;
+}
+
+h2.title {
+  font-size: 36px;
 }
 
 .title {
@@ -154,3 +158,13 @@ section.hero-section {
 ul.strengths-list p {
   font-size: 14px;
 }
+
+/* Reviews */
+
+.vote-list .list-item svg{
+  color: gold;
+  width: 18px;
+}
+
+
+
