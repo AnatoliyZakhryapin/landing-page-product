@@ -44,3 +44,9 @@ figure > img {
   width: 100%;
 }
 
+.icon {
+  width: 36px; 
+  height: 36px; 
+  fill: currentColor;
+}
+
