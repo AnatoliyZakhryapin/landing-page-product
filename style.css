@@ -98,7 +98,7 @@ header {
 
 /* MAIN */
 
-section {
+section.hero-section {
   margin-top: 100px;
   height: calc(100vh - 100px);
 }
@@ -112,4 +112,15 @@ section {
 
 .hero-section_content h1{
   font-size: 44px;
+}
+
+/* Our Strengths */
+
+.our-strengths-section ul.strengths-list  {
+  padding: 0;
+  margin: 0;
+}
+
+ul.strengths-list p {
+  font-size: 14px;
 }
