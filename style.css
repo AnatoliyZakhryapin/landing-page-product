@@ -156,7 +156,7 @@ h2.title {
 }
 
 ul.strengths-list p {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /* Reviews */
@@ -174,5 +174,27 @@ ul.strengths-list p {
   font-weight: bold;
 }
 
+/* FAQs */
 
+.faqs-section .accordion-button:focus {
+  box-shadow: none;
+}
+
+.faqs-section .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: var(--violet);
+}
+
+.faqs-section .accordion-button::after {
+  content: '\f067';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  margin-left: auto;
+  transition: transform 0.2s ease-in-out;
+  background-image: none; 
+}
+.faqs-section .accordion-button:not(.collapsed)::after {
+  content: '\f068'; 
+  background-image: none; 
+}
 
