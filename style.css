@@ -4,8 +4,8 @@
 }
 
 :root {
-  --violet: #2E45CC;
-  --green: #04DF6C;
+  --violet: rgb(46, 69, 204);
+  --green: rgb(4, 223, 108);
   --black: #3D3A38;
   --black-transparent: #3d3a3844;
   --bg-section-dark: #f7f7f7;
@@ -244,6 +244,7 @@ ul.strengths-list p {
 
 #newsletter-form .icon {
   color: var(--green);
+  transition: color 0.3s;
 }
 
 .social-links-list .list-item {
@@ -251,9 +252,25 @@ ul.strengths-list p {
   border-radius: 99px;
   padding: 10px;
   background-color: white;
+  box-sizing: border-box;
+  transition: box-shadow 0.3s, color 0.3s;
 }
 
 .social-links-list .list-item .icon {
   color: var(--green);
 }
 
+.social-links-list .list-item:hover {
+  box-shadow: 0 0 20px rgba(46, 69, 204, 0.9);
+  transform: scale(1.1);
+  border-color: rgba(46, 69, 204, 0.3);
+}
+
+.social-links-list .list-item:hover .icon {
+  color: var(--violet);
+}
+
+#newsletter-form button .icon:hover {
+  transform: scale(1.1);
+  color: var(--violet);
+}
