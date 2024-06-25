@@ -112,7 +112,7 @@ figure>img {
 
 /* OFFCANVAS */
 .offcanvas {
-  width: 75%;
+  width: 75%!important;
 }
 
 .offcanvas * {
