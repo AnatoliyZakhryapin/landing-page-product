@@ -7,20 +7,29 @@
   --violet: #2E45CC;
   --green: #04DF6C;
   --black: #3D3A38;
+  --black-transparent: #3d3a3844;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif!important;
-  font-size: 16px!important;
-  font-weight: 400!important;
-  line-height: 1.24!important;
-  color: var(--black)!important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: 1.24 !important;
+  color: var(--black) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: bolder !important;
+  line-height: 1.5 !important;
 }
 
 header {
-  font-family: 'Poppins', sans-serif !important;
-  font-weight: 400 !important;
-  line-height: 1.5 !important;
   position: fixed;
   top: 0;
   left: 0;
@@ -39,7 +48,7 @@ a {
 ul,
 ol,
 menu {
-    list-style: none;
+  list-style: none;
 }
 
 img {
@@ -47,17 +56,17 @@ img {
 }
 
 figure {
-  margin: 0!important;
+  margin: 0 !important;
 }
 
-figure > img {
+figure>img {
   display: block;
   width: 100%;
 }
 
 .icon {
-  width: 36px; 
-  height: 36px; 
+  width: 36px;
+  height: 36px;
   fill: currentColor;
   color: var(--black);
 }
@@ -104,7 +113,8 @@ figure > img {
 .offcanvas {
   width: 75%;
 }
-.offcanvas *{
+
+.offcanvas * {
   color: var(--black);
   text-decoration: none;
 }
@@ -118,8 +128,8 @@ figure > img {
   cursor: pointer;
 }
 
-.offcanvas-menu .menu-item.active, 
-.offcanvas-menu .menu-item a:hover{
+.offcanvas-menu .menu-item.active,
+.offcanvas-menu .menu-item a:hover {
   color: var(--violet);
 }
 
@@ -148,9 +158,10 @@ h2.title {
 .title {
   font-weight: bolder;
 }
+
 /* Our Strengths */
 
-.our-strengths-section ul.strengths-list  {
+.our-strengths-section ul.strengths-list {
   padding: 0;
   margin: 0;
 }
@@ -161,14 +172,14 @@ ul.strengths-list p {
 
 /* Reviews */
 
-.vote-list .list-item svg{
+.vote-list .list-item svg {
   color: gold;
   width: 18px;
 }
 
 /* Our Ducks */
 
-.card-duck .price{
+.card-duck .price {
   color: var(--green);
   font-size: 24px;
   font-weight: bold;
@@ -191,15 +202,47 @@ ul.strengths-list p {
   font-weight: 900;
   margin-left: auto;
   transition: transform 0.2s ease-in-out;
-  background-image: none; 
+  background-image: none;
 }
+
 .faqs-section .accordion-button:not(.collapsed)::after {
-  content: '\f068'; 
-  background-image: none; 
+  content: '\f068';
+  background-image: none;
 }
 
 /* Customer guarantees */
 
 .customer-guarantees .icon {
-  color:  var(--violet);
+  color: var(--violet);
 }
+
+/* Newsletter */
+
+#newsletter-form {
+  border-bottom: 1px solid var(--black-transparent);
+  padding: 15px;
+  color: var(--black-transparent);
+}
+
+#newsletter-form input {
+  outline: none;
+}
+
+#newsletter-form input:focus {
+  font-weight: bolder;
+}
+
+#newsletter-form .icon {
+  color: var(--green);
+}
+
+.social-links-list .list-item {
+  border: 1px solid var(--black-transparent);
+  border-radius: 99px;
+  padding: 10px;
+}
+
+.social-links-list .list-item .icon {
+  color: var(--green);
+}
+
