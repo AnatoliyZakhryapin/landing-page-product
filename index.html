@@ -61,19 +61,18 @@
   </header>
 
   <!-- Main -->
-  <main class="main d-flex flex-column gap-5">
+  <main class="main d-flex flex-column gap-3 gap-md-4">
 
     <!-- Hero section -->
     <section class="hero-section">
-      <div class="container-fluid h-100">
+      <div class="container-xxl h-100">
         <div class="row h-100">
-          <div class="col-12 h-50 p-0 hero-section_banner">
+          <div class="col-12 col-md-6 p-0 hero-section_banner">
             <figure class="d-flex h-100">
               <img class="object-fit-cover" src="/images/banner-image.png" alt="banner-image">
             </figure>
           </div>
-          <div
-            class="col-12 h-50 p-5 hero-section_content d-flex flex-column justify-content-center align-items-center text-center">
+          <div class="col-12 col-md-6 p-5 hero-section_content d-flex flex-column justify-content-center align-items-center text-center">
             <h1 class="title">
               <span class="d-block">Rubber Duck</span>
               <span class="d-block">Debuggings</span>
@@ -87,10 +86,12 @@
     </section>
 
     <!-- Our Strengths section -->
-    <section class="our-strengths-section">
-      <div class="container-fluid">
+    <section class="our-strengths-section p-3 p-md-4">
+      <div class="container-xxl">
         <div class="row">
-          <div class="col-12">
+
+          <!-- Strengths list -->
+          <div class="col-12 col-md-4">
             <ul class="strengths-list text-center d-flex flex-column gap-3">
               <li class="list-item">
                 <h6 class="title">Resistenza agli spruzzi</h6>
@@ -109,12 +110,16 @@
               </li>
             </ul>
           </div>
-          <div class="col-12">
+
+          <!-- Image -->
+          <div class="col-12 col-md-4">
             <figure class="p-3">
               <img class="img-fluid" src="/images/invisible.png" alt="banner-image">
             </figure>
           </div>
-          <div class="col-12">
+
+              <!-- Strengths list -->
+          <div class="col-12 col-md-4">
             <ul class="strengths-list text-center d-flex flex-column gap-3">
               <li class="list-item">
                 <h6 class="title">Lunga Durata Della Batteria</h6>
@@ -138,8 +143,8 @@
     </section>
 
     <!-- Reviews section -->
-    <section class="reviews-section">
-      <div class="container-fluid">
+    <section class="reviews-section p-3 p-md-4">
+      <div class="container-xxl">
 
         <!-- Title -->
         <div class="row text-center">
@@ -319,12 +324,12 @@
     </section>
 
     <!-- Our Ducks section -->
-    <section class="our-ducks-section">
-      <div class="container-fluid">
+    <section class="our-ducks-section p-3 p-md-4">
+      <div class="container-xxl">
 
         <!-- Title -->
         <div class="row text-center">
-          <div class="col">
+          <div class="col-12">
             <h2 class="title mb-3">La collezione di paperelle</h2>
             <P>Una paperella per ogni stile di programazione</P>
           </div>
@@ -332,7 +337,7 @@
 
         <!-- Ducks -->
         <div class="row">
-          <div class="col-12">
+          <div class="col-12 col-md-4">
             <div class="card-duck pb-3">
               <figure class="mb-2">
                 <img class="img-fluid" src="/images/product-item1.png" alt="banner-image">
@@ -368,7 +373,7 @@
                 <div class="price">$15</div>
             </div>
           </div>
-          <div class="col-12">
+          <div class="col-12 col-md-4">
             <div class="card-duck pb-3">
               <figure class="mb-2">
                 <img class="img-fluid" src="/images/product-item2.png" alt="banner-image">
@@ -404,7 +409,7 @@
                 <div class="price">$29</div>
             </div>
           </div>
-          <div class="col-12">
+          <div class="col-12 col-md-4">
             <div class="card-duck pb-3">
               <figure class="mb-2">
                 <img class="img-fluid" src="/images/product-item3.png" alt="banner-image">
@@ -445,25 +450,25 @@
     </section>
 
     <!-- FAQs section -->
-    <section class="faqs-section">
-      <div class="container-fluid">
+    <section class="faqs-section p-3 p-md-4">
+      <div class="container-xxl">
 
         <div class="row">
 
+          <!-- Title -->
+          <div class="col-12 order-1 order-md-0 text-md-center">
+            <h2 class="title mb-4">FAQs</h2>
+          </div>
+
           <!-- Image -->
-          <div class="col-12">
+          <div class="col-12 col-md-6 order-0 order-md-1">
             <figure class="mb-4">
               <img class="img-fluid" src="/images/single-image2.png" alt="banner-image">
             </figure>
           </div>
 
-          <!-- Title -->
-          <div class="col-12">
-            <h2 class="title mb-4">FAQs</h2>
-          </div>
-
           <!-- FAQs -->
-          <div class="col-12">
+          <div class="col-12 col-md-6 order-2">
             <div class="accordion accordion-flush" id="accordionFlushExample">
               <div class="accordion-item">
                 <h2 class="accordion-header">
@@ -532,52 +537,56 @@
             </div>
           </div>
 
-          <!-- Customer guarantees -->
-          <section class="customer-guarantees py-5">
-            <div class="container-fluid">
-              <div class="row text-center py-5 gap-4">
-                <div class="col-12">
-                  <div class="guarantees-card">
-                    <svg class="icon mb-3">
-                      <use xlink:href="#balloon"></use>
-                    </svg>
-                    <h4 class="title">100% Prodotto Di Qualità</h4>
-                    <p>Abbiamo anche la possibilità di ritiro direttamente dallo stagno</p>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="guarantees-card">
-                    <svg class="icon mb-3">
-                      <use xlink:href="#bag-heart"></use>
-                    </svg>
-                    <h4 class="title">Spedizione Gratuita</h4>
-                    <p>Dal magazzino alla scrivania</p>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="guarantees-card">
-                    <svg class="icon mb-3">
-                      <use xlink:href="#handiplast"></use>
-                    </svg>
-                    <h4 class="title">Rimborso Garantito</h4>
-                    <p>Ti rimborsiamo se la paperella fa quack</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+        </div>
+      </div>
+    </section>
 
+    <!-- Customer guarantees -->
+    <section class="customer-guarantees p-3 p-md-4">
+      <div class="container-xxl">
+        <div class="row text-center py-5 gap-4 gap-md-0">
+          <div class="col-12 col-md-4">
+            <div class="guarantees-card">
+              <svg class="icon mb-3">
+                <use xlink:href="#balloon"></use>
+              </svg>
+              <h4 class="title">100% Prodotto Di Qualità</h4>
+              <p>Abbiamo anche la possibilità di ritiro direttamente dallo stagno</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="guarantees-card">
+              <svg class="icon mb-3">
+                <use xlink:href="#bag-heart"></use>
+              </svg>
+              <h4 class="title">Spedizione Gratuita</h4>
+              <p>Dal magazzino alla scrivania</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="guarantees-card">
+              <svg class="icon mb-3">
+                <use xlink:href="#handiplast"></use>
+              </svg>
+              <h4 class="title">Rimborso Garantito</h4>
+              <p>Ti rimborsiamo se la paperella fa quack</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Newsletter -->
-    <section class="newsletter-section text-center p-3">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            
+    <section class="newsletter-section text-center p-3 p-md-4">
+      <div class="container-xxl">
+        <div class="row justify-content-center">
+          <div class="col-8 col-md-6 col-xl-3">
             <h2 class="title">Iscriviti per rimanere aggiornato</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6">
+
             <p>Iscriviti alla nostra newsletter per rimanere aggiornato su sconti e novità</p>
 
             <!-- form -->
@@ -593,7 +602,7 @@
             </form>
 
             <!-- list of social link -->
-            <ul class="social-links-list d-flex justify-content-center gap-3">
+            <ul class="social-links-list d-flex justify-content-center gap-3 p-0 m-0">
               <li class="list-item">
                 <a href="#">
                   <svg class="icon">
@@ -636,15 +645,15 @@
     </section>
 
     <!-- Footer -->
-     <footer class="page-footer p-3">
+    <footer class="page-footer p-3">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-12">
+          <div class="col-12 text-center">
             <p>© 2024 BooLanding Product. Designed by Boolean</p>
           </div>
         </div>
       </div>
-     </footer>
+    </footer>
 
   </main>
 
@@ -718,7 +727,7 @@
         },
       },
       breakpoints: {
-        1024: {
+        768: {
           slidesPerView: 3,
           spaceBetween: 30,
         },
