@@ -8,6 +8,7 @@
   --green: #04DF6C;
   --black: #3D3A38;
   --black-transparent: #3d3a3844;
+  --bg-section-dark: #f7f7f7;
 }
 
 body {
@@ -179,6 +180,10 @@ ul.strengths-list p {
 
 /* Our Ducks */
 
+.our-duck-section {
+  background-color: var(--bg-section-dark);
+}
+
 .card-duck .price {
   color: var(--green);
   font-size: 24px;
@@ -218,6 +223,10 @@ ul.strengths-list p {
 
 /* Newsletter */
 
+.newsletter-section {
+  background-color: var(--bg-section-dark);
+}
+
 #newsletter-form {
   border-bottom: 1px solid var(--black-transparent);
   padding: 15px;
@@ -226,6 +235,7 @@ ul.strengths-list p {
 
 #newsletter-form input {
   outline: none;
+  background-color: transparent;
 }
 
 #newsletter-form input:focus {
@@ -240,6 +250,7 @@ ul.strengths-list p {
   border: 1px solid var(--black-transparent);
   border-radius: 99px;
   padding: 10px;
+  background-color: white;
 }
 
 .social-links-list .list-item .icon {
