@@ -4,7 +4,7 @@
 }
 
 :root {
-  --violet: rgb(46, 69, 204);
+  --violet: #2e45cc;
   --green: rgb(4, 223, 108);
   --black: #3D3A38;
   --black-transparent: #3d3a3844;
@@ -111,29 +111,52 @@ figure>img {
   font-weight: bold;
 }
 
-/* OFFCANVAS */
+/* HEADER */
+.header * {
+  text-decoration: none;
+  color: var(--black);
+}
 .offcanvas {
   width: 75%!important;
 }
 
-.offcanvas * {
-  color: var(--black);
-  text-decoration: none;
-}
-
-.offcanvas-menu {
+.offcanvas-menu, .navigation-menu {
   padding: 0;
   margin: 0;
 }
 
-.offcanvas-menu .menu-item {
+.header .menu-item {
   cursor: pointer;
+  transition: color 0.3s;
+  position: relative; /* Aggiunto per posizionare correttamente l'elemento ::after */
 }
 
-.offcanvas-menu .menu-item.active,
-.offcanvas-menu .menu-item a:hover {
-  color: var(--violet);
+.header .menu-item a {
+  padding: 6px 0px;
 }
+
+.header .menu-item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0; /* Larghezza iniziale zero per far partire l'animazione */
+  height: 3px;
+  background-color: var(--violet);
+  transition: width 0.3s ease-in-out; /* Transizione della larghezza */
+}
+
+.header .menu-item.active::after {
+  width: 100%; /* Larghezza al 100% quando il menu item è attivo */
+}
+
+.header .menu-item.active a,
+.header .menu-item:hover a {
+  color: var(--violet);
+  font-weight: bold;
+}
+
 
 /* MAIN */
 
