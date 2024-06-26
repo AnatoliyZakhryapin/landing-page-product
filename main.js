@@ -1,4 +1,5 @@
 
+//------- Active Nav with Scroll -------------//
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header .menu-item a ');
 let headerHeight = 100;
@@ -88,3 +89,24 @@ window.onscroll = () => {
         }
     }
 };
+
+//--------- Custom succes message ----------//
+document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+    // Prevent normal form submission
+    e.preventDefault(); 
+
+    // Submit the form using Netlify's API
+    fetch('/', {
+        method: 'POST',
+        body: new FormData(this)
+    })
+    .then(response => {
+        // Hide the form and show the success message
+        console.log(response);
+        this.style.display = 'none'; // Hide the form
+        document.getElementById('success-message').style.display = 'block'; // Show the success message
+    })
+    .catch(error => {
+        console.error('Error submitting the form', error);
+    });
+});
