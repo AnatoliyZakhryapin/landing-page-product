@@ -125,9 +125,9 @@ figure>img {
   margin: 0;
 }
 
-.header .menu-item {
+.header .menu-item a{
   cursor: pointer;
-  transition: color 0.3s;
+  transition: color 0.5s, width 0.5s;
   position: relative; /* Aggiunto per posizionare correttamente l'elemento ::after */
 }
 
@@ -135,7 +135,7 @@ figure>img {
   padding: 6px 0px;
 }
 
-.header .menu-item::after {
+.header .menu-item a::after {
   content: "";
   display: block;
   position: absolute;
@@ -147,12 +147,12 @@ figure>img {
   transition: width 0.3s ease-in-out; /* Transizione della larghezza */
 }
 
-.header .menu-item.active::after {
+.header .menu-item a.active::after {
   width: 100%; /* Larghezza al 100% quando il menu item è attivo */
 }
 
-.header .menu-item.active a,
-.header .menu-item:hover a {
+.header .menu-item a.active,
+.header .menu-item a:hover {
   color: var(--violet);
   font-weight: bold;
 }
@@ -342,11 +342,11 @@ ul.strengths-list p {
     height: auto;
   }
 
-  .customer-guarantees .row [class^="col-"] {
+  .customer-guarantees.row [class^="col-"] {
     border-right: 1px solid var(--black-transparent);
   }
 
-  .customer-guarantees .row [class^="col-"]:last-child {
+  .customer-guarantees.row [class^="col-"]:last-child {
     border-right: none;
   }
 }
