@@ -101,10 +101,14 @@ document.getElementById('newsletter-form').addEventListener('submit', function(e
         body: new FormData(this)
     })
     .then(response => {
-        // Hide the form and show the success message
-        console.log(response);
-        this.style.display = 'none'; // Hide the form
-        document.getElementById('success-message').style.display = 'block'; // Show the success message
+        // Hide the form
+        this.classList.add('d-none'); 
+
+        // Show the success message
+        document.getElementById('success-message').classList.remove('d-none'); 
+
+        // Add class to show the success message
+        document.getElementById('success-message').classList.add('d-block'); 
     })
     .catch(error => {
         console.error('Error submitting the form', error);

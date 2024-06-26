@@ -602,7 +602,7 @@
             <p>Iscriviti alla nostra newsletter per rimanere aggiornato su sconti e novità</p>
 
             <!-- form -->
-            <form class="d-flex position-relative mb-5" id="newsletter-form" name="newsletter" netlify>
+            <form class="d-flex position-relative my-5" id="newsletter-form" name="newsletter" netlify>
               <input class="flex-grow-1 border-0" type="email" id="email" name="email"
                 placeholder="Lascia la tua email qui..." required>
               <button class="btn btn-unstyled position-absolute end-0 top-0" type="submit">
@@ -612,8 +612,19 @@
               </button>
             </form>
 
-            <div id="success-message" style="display: none;">
-              Il form è stato inviato con successo!
+            <div id="success-message" class="success-message my-5 d-none">
+              <div class="success-checkmark">
+                <div class="check-icon">
+                  <span class="icon-line line-tip"></span>
+                  <span class="icon-line line-long"></span>
+                  <div class="icon-circle"></div>
+                  <div class="icon-fix"></div>
+                </div>
+              </div>
+              <div class="success-text">
+                <h4 class="title">Thank you!</h4>
+                <p>Your form submission has been received.</p>
+              </div>
             </div>
 
             <!-- list of social link -->
