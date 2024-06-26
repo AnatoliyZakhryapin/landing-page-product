@@ -4,6 +4,10 @@
 
 This project aims to create a landing page following the designer's guidelines to promote a product. A landing page is a web page specifically designed to promote a product or service and convert visitors into customers. It is often used as the endpoint for online marketing campaigns, including advertisements, email marketing, social media, and other digital marketing channels.
 
+To view the landing page of the favorite product, click the link below:
+
+[Favorite Product Landing Page](https://duck-landing-page.netlify.app/)
+
 ## Objective
 
 The main goal of this project is to create an effective landing page that:
