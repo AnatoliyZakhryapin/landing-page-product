@@ -1,5 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap';
 
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header .menu-item a ');
